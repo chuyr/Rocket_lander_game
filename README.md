@@ -3,4 +3,4 @@
 rocket lander game with python.
 
 result:
-![python2_result](C:\Users\user\Documents\2019_summer_QI\python\python2_result.png)
+![python2_result](./image/python2_result.PNG)
