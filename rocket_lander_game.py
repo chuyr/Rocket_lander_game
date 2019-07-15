@@ -22,6 +22,10 @@ while position > 0:
         elif fuel < thrusters:
             print "Out of fuel! Thrusters at " + str(fuel)
 
+        if fuel < thrusters:
+            # acceleration -= (thrusters + 6)
+            thrusters = fuel
+
         fuel -= thrusters
         acceleration = gravity + thrusters
         position += velocity + acceleration * 0.5
@@ -29,6 +33,7 @@ while position > 0:
 
     else:
         print "No fuel -- rocket is in free-fall!"
+
         thrusters = 0
         fuel -= thrusters
         acceleration = gravity + thrusters
